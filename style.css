@@ -22,7 +22,7 @@ section{
     background-color: #F9A8D4;
 }
 .container{
-    width: 50%;
+    width: 65%;
     height: 400px;
     padding: 1rem;
     background-color: #9D174D;
@@ -69,4 +69,14 @@ input{
 }
 .hidden{
     display: none;
+}
+
+@media(max-width:480px){
+    h1{
+        word-spacing: 3px;
+        font-size: 15px;
+    }
+    .container{
+        height: 300px;
+    }
 }

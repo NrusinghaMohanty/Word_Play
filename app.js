@@ -4,7 +4,7 @@ const btn=document.querySelector(".btn")
 let play = false;
 let newWords = "";
 let randomWords= "";
-let words = ["java" , "javascript" , "c++" , "php" , "html" , "css" , "reactjs" , "python" , "angular"]
+let words = ["java" , "javascript" , "c++" , "php" , "html" , "css" , "reactjs" , "python" , "angular" , "swift" ]
 
 const creatnewWord = () => {
   let randomNumnber =Math.floor(  Math.random() * words.length)
@@ -16,7 +16,7 @@ const creatnewWord = () => {
 const scrmbleWords = (arr) =>{
     let arr2 = arr.split("")
     for (let i= arr2.length-1; i>=0;i--){
-        let temp = arr[i];
+        let temp = arr2[i];
         let temp2= Math.floor(Math.random()* (i+1))
         arr2[i]= arr2[temp2];
         arr2[temp2]=temp;
