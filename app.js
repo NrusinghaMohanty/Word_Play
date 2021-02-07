@@ -33,17 +33,17 @@ btn.addEventListener("click",()=>{
         newWords = creatnewWord();
         randomWords = scrmbleWords(newWords);
         randomWords= randomWords.join("")
-        msg.innerHTML = `guess the word ${randomWords}`;
+        msg.innerHTML = `Guess the word : ${randomWords}`;
     }else{
         let userInput = input.value;
          if(userInput === newWords){
              play = false;
-             msg.innerHTML= "correct";
-             btn.innerHTML = "start again";
+             msg.innerHTML= "You are correct";
+             btn.innerHTML = "start Again";
              input.classList.toggle("hidden");
              input.value =""
         }else{
-             msg.innerHTML= `Incorrect !!! please try again ${randomWords}`;  
+             msg.innerHTML= `Incorrect !!! please try again : ${randomWords}`;  
              input.value =""
          }
         }
