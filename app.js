@@ -36,7 +36,7 @@ btn.addEventListener("click",()=>{
         msg.innerHTML = `Guess the word : ${randomWords}`;
     }else{
         let userInput = input.value;
-         if(userInput === newWords){
+         if(userInput.toLowerCase() === newWords){
              play = false;
              msg.innerHTML= "You are correct";
              btn.innerHTML = "start Again";
