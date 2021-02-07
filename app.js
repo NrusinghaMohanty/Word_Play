@@ -33,7 +33,7 @@ btn.addEventListener("click",()=>{
         newWords = creatnewWord();
         randomWords = scrmbleWords(newWords);
         randomWords= randomWords.join("")
-        msg.innerHTML = `Guess the word : ${randomWords}`;
+        msg.innerHTML = `Guess the Programming language: ${randomWords}`;
     }else{
         let userInput = input.value;
          if(userInput.toLowerCase() === newWords){
